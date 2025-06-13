@@ -58,7 +58,8 @@ h2 {
 
 a {
     text-decoration: none;
-    color:#FFD700;
+    /* color:#FFD700; */
+    color: #b152c0;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
@@ -903,6 +904,7 @@ footer {
 
 #footer-nav ul li a {
     font-size: 1.2rem;
+    color: #621F83;
 }
 
 #footer-nav ul {
