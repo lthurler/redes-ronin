@@ -259,7 +259,7 @@ header {
 }
 
 #main-text h2 {
-    color: #b152c0;
+    color: #FFD700;
     font-weight: 700;
 }
 
@@ -351,21 +351,27 @@ header {
     color: #b152c0;
 }
 
+.servico-txt h4 {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .servico-txt p {
     font-family: 'poppins', sans-serif;
     font-size: .9rem;
 }
 
-.saiba {
-    text-decoration: underline;
+.servico-txt ul{
+    list-style: inside;    
 }
 
 #mesh-img {
-    background: center/cover no-repeat url(../img/rede-mesh.webp);
+    background: center/cover no-repeat url(../img/Cabeamento-Estruturado-02.webp);
 }
 
 #externo-img {
-    background: center/contain no-repeat url(../img/tplink-deco.webp);
+    background: center/cover no-repeat url(../img/camera-ip-de-4mp-vip-7450-z-a-ft.jpg);
 }
 
 #ap-img {
