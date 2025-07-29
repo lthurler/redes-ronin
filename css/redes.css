@@ -849,8 +849,10 @@ footer {
 
 #footer-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    /* justify-content: space-around;
+    align-items: flex-start; */
+    flex-direction: column;
+    padding-top: 2rem;
 }
 
 #footer-content {
@@ -864,12 +866,24 @@ footer {
     padding-bottom: 3rem;
 }
 
+#footer-endereco {
+    padding-bottom: 1rem;
+}
+
+#footer-nav ul li a {
+    transition: all .4s ease-in-out;
+}
+
+#footer-nav ul li a:hover {
+    color: #ffff;
+}
+
 #footer-logo img {
     width: 200px;
 }
 
 #footer-telefone {
-    transition: all;
+    transition: all .4s ease-in-out;
 }
 
 #social-link {
@@ -935,8 +949,10 @@ footer {
 
 #footer-logo {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #footer-map {
@@ -944,8 +960,10 @@ footer {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* padding-right: 2.5rem; */
+    width: 300px;
+    align-self: center;
     padding-bottom: 2rem;
+
 }
 
 #footer-map iframe {
