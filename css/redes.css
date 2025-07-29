@@ -77,7 +77,9 @@ ul {
 #hero {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), top center/cover no-repeat url(../img/ronin_hero.webp);
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), top center/cover no-repeat url(../img/ronin_hero2.webp);
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
@@ -85,9 +87,9 @@ ul {
     max-height: 100vh; */
 }
 
-header {
+header {    
     width: 100%;
-    height: 15vh;
+    /* height: 15vh; */
 }
 
 #header-container {
@@ -218,7 +220,7 @@ header {
 }
 
 #home {
-    height: 85vh;
+    /* height: 85vh; */
     color: #ffff;
     display: flex;
     justify-content: center;
@@ -272,10 +274,6 @@ header {
 
 #main-resto {
     padding-bottom: 1rem;
-}
-
-#main-img {
-    width: 500px;
 }
 
 #main-img img {
@@ -348,7 +346,7 @@ header {
 }
 
 .servico-txt h2 {
-    color: #b152c0;
+    color: #FFD700;
 }
 
 .servico-txt h4 {
@@ -364,6 +362,20 @@ header {
 
 .servico-txt ul{
     list-style: inside;    
+}
+
+.links-contato {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links-contato span {
+    border: none;
+    font-size: 1rem;
 }
 
 #mesh-img {
@@ -444,7 +456,7 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 6rem;
-    padding-top: 3rem;
+    padding: 3rem 0;
 }
 
 #sobre h2 {
@@ -462,7 +474,7 @@ header {
 }
 
 #ronin-txt h2 {
-    color: #92429f;
+    color: #FFD700;
     font-size: 1.3rem;
     font-weight: bold;
     font-family: 'SUSE',sans-serif;
@@ -602,7 +614,7 @@ header {
 
 #social {
     width: 1230px;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
 }
 
 #social-container h2 {
@@ -851,12 +863,14 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: .9rem;
     padding-top: 2rem;
+    gap: 2rem;
 }
 
 #footer-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer-content {
@@ -865,12 +879,11 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 3rem;
+    
 }
 
 #footer-logo img {
+    order: 2;
     width: 200px;
 }
 
@@ -911,6 +924,11 @@ footer {
 #footer-nav ul li a {
     font-size: 1.2rem;
     color: #621F83;
+    transition: all .5s ease-in-out;
+}
+
+#footer-nav ul li a:hover {
+    color: #ffff;
 }
 
 #footer-nav ul {
@@ -941,17 +959,14 @@ footer {
 
 #footer-logo {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#footer-map {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    /* padding-right: 2.5rem; */
-    padding-bottom: 2rem;
+    gap: 2rem;
+}
+
+#footer-menu {
+    order: 1;
 }
 
 #footer-map iframe {
@@ -1018,7 +1033,11 @@ footer {
     #outros-servicos h2,
     #servicos h2,
     #sobre h2 {
-        padding: 2rem 0;
+        padding: 3rem 0;        
+    }
+
+    #ronin-txt h2 {
+        font-size: 1.4rem;
     }
 
     #social-container {
@@ -1031,11 +1050,12 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
-    /* #hero {
-        height: auto;
-        min-height: 100vh;
-        background-attachment: scroll;
-    } */
+    #hero {
+        height: 100vh;
+        width: 100vw;
+        max-height: 100vh;
+        max-width: 100vw;
+    }
 
     #header-menu {
         display: none;
@@ -1066,15 +1086,12 @@ footer {
         z-index: 1;
     } */
 
-    #header {
-        padding: 0;
-        margin: 0;
-        height: 10vh;
-        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    }
+    /* #header {
+        padding-bottom: 4rem;
+    } */
 
     #home {
-        height: 90vh;
+        padding-bottom: 3rem;
     }
 
     #main-container {
@@ -1094,6 +1111,7 @@ footer {
         align-items: center;
         gap: .5rem;
         text-align: center;
+        padding: 1.5rem 1.5rem;
     }
 
     #main-p {
