@@ -17,13 +17,21 @@ const navLink = document.querySelectorAll(".nav__link"),
 };
      
 navLink.forEach((e) => e.addEventListener("click", linkAction));
-const scrollUp = () => {
-     const e = document.getElementById("scroll-up"),
-          t = document.getElementById("tel-up");
-     console.log(t), this.scrollY >= 350 ? e.classList.add("show-scroll") : e.classList.remove("show-scroll"), this.scrollY >= 350 ? t.classList.add("show-scroll") : t.classList.remove("show-scroll");
-};
 
-window.addEventListener("scroll", scrollUp);
+// const scrollUp = () => {
+//      const e = document.getElementById("scroll-up");
+// };
+
+// window.addEventListener("scroll", scrollUp);
+
+/*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+	const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						: scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 // const contactForm = document.getElementById("contact-form"),
 //      contactName = document.getElementById("contact-name"),
